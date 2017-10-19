@@ -1,0 +1,218 @@
+/* .CODE home page CSS desiged and created by James Hunt and Brandon Rodgers - 29/07/17 */
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* nav-bar styling */
+
+#nav-bar {
+  text-align: center;
+  background-color: #333;
+}
+
+#nav-bar h3 {
+  margin: 10px;
+  padding: 10px;
+  font-family: "Quicksand", arial;
+  cursor: pointer;
+}
+
+#nav-bar a {
+  color: darkorange;
+  text-decoration: none;
+}
+
+/* recommended for you section */
+
+#recommended-for-you {
+  width: 100%;
+}
+
+#recommended-for-you h1 {
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  text-align: center;
+  margin: 20px;
+  padding: 0px;
+}
+
+#recommended-for-you h3 {
+  font-family: "Quicksand", arial;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  padding: 0px;
+}
+
+#recommended-languages-wrapper {
+  text-align: center;
+}
+
+.logo-wrapper {
+  text-align: center;
+  margin: 10px;
+}
+
+.language-logo {
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px grey;
+  margin: 10px;
+}
+
+.language-info {
+  font-family: "Quicksand", arial;
+  padding: 5px;
+  text-align: center;
+}
+
+#browse-more a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* try our projects section styling */
+
+#projects-section {
+  width: 100%;
+  background-color: #E0E0E0;
+  margin: 0px;
+  padding: 0px;
+}
+
+#projects-header {
+  font-family: "Quicksand", arial;
+  text-align: center;
+}
+
+#projects-header h1 {
+  font-size: 50px;
+  padding: 15px;
+}
+
+.project-lang-header {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-weight: bold;
+}
+
+.new {
+  color: darkorange;
+}
+
+.project-image-wrapper {
+  text-align: center;
+  margin: 10px;
+}
+
+.project-logo {
+  height: 250px;
+  width: 250px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.project-info {
+  font-family: "Quicksand", arial;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+#browse-all-projects {
+  font-family: "Quicksand", arial;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+  padding: 15px;
+}
+
+#browse-all-projects a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* challenge yourself styling */
+
+#challenge-section h1 {
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  text-align: center;
+  margin: 20px;
+  padding: 0px;
+}
+
+#challenge-section h3 {
+  font-family: "Quicksand", arial;
+  text-align: center;
+  margin: 20px;
+  padding: 0px;
+}
+
+.language-header {
+  font-weight: bold;
+}
+
+.challenge-info {
+  font-family: "Quicksand", arial;
+  text-align: center;
+  margin: 5px 5px 20px 5px;
+  padding: 5px;
+}
+
+#challenge-section a {
+  color: #333;
+  text-decoration: none;
+  margin: 0px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* footer styling */
+
+#footer {
+  background-color: #333;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#footer h3 {
+  margin: 0px;
+  padding: 10px;
+  font-family: "Quicksand", arial;
+  color: darkorange;
+}
+
+#footer p {
+  font-family: "Quicksand", arial;
+  color: white;
+}
+
+#footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* copyright notice */
+
+#copyright {
+  text-align: center;
+  background-color: #333;
+  margin: 0px;
+  padding: 0px;
+}
+
+#copyright p {
+  font-family: "Quicksand", arial;
+  color: darkorange;
+  padding: 10px;
+  margin-bottom: 0px;
+}

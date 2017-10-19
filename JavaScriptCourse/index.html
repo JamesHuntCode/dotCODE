@@ -1,0 +1,619 @@
+<!-- .CODE javascript course page HTMl desiged and created by James Hunt and Brandon Rodgers - 29/07/17 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>dotCode | Complete JavaScript Course | NEW</title>
+    <link rel="icon" href="images/website-logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery CDN -->
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> <!-- jQuery UI CDN -->
+    <script src="script.js" type="text/javascript"></script> <!-- link to external JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Bootstrap CDN -->
+    <link href="style.css" rel="stylesheet" type="text/css"> <!-- link to external CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"> <!-- font installation -->
+  </head>
+  <body>
+    <div id="nav-bar" class="row"> <!-- navigation bar -->
+      <div class="col-sm-3">
+        <h3 id="nav-bar-logo"><a href="/Users/James/Desktop/dotCODE/HomePage/index.html">dotCode</a></h3>
+      </div>
+      <div class="col-sm-3">
+        <h3><a href="/Users/James/Desktop/dotCODE/Courses/index.html">Courses</a></h3>
+      </div>
+      <div class="col-sm-3">
+        <h3><a href="">Challenges</a></h3>
+      </div>
+      <div class="col-sm-3">
+        <h3><a href="/Users/James/Desktop/dotCODE/AboutUs/index.html">About Us</a></h3>
+      </div>
+    </div>
+    <div id="introduction" class="row">
+      <h1>Introduction to JavaScript:</h1> <!-- introduction to JavaScript, answering FAQ's -->
+      <div class="col-sm-4">
+        <h3>Why learn JavaScipt?</h3>
+        <p class="intro-info">
+          Good question, why should you learn JavaScript in 2017?
+          JavaScript is an amazing programming language to learn in 2017 because it is the language currently second in demand from employers.
+          Learning JavaScript will increase your job prospects and give you a higher chance at getting that job.
+          JavaScript is the future.
+          There are so many libraries for JavaScipt which makes the language, well... usable for almost anything.
+          Learning vanilla JavaScript with us here is a fantastic idea to get you started on a whole journey of programming.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h3>What is JavaScript used for?</h3>
+        <p class="intro-info">
+          Looking at where we are now, JavaScript can be seen everywhere.
+          You see that cool animation on that webpage that you like?
+          Yeah, that was JavaScript.
+          Do you like how fast you can log into many different websites without having to wait for years?
+          Well, that was most likely Node.js (a popular server-side JavaScript framework) that allowed you to do that.
+          JavaScript can now be used client and server-side to create a smooth, dynamic and modern webpage.
+          Get started soon because JavaScipt is only going to become more and more popular.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Is JavaScipt hard to learn?</h3>
+        <p class="intro-info">
+          As far as programming languages go, JavaScript is fairly high-level, meaning that it really isn't that hard to learn.
+          If you imagine low-level programming to be machine code (1's and 0's), JavaScript is extremely high level, meaning that it is closer to how we interpret the code than the computer.
+          It definately isn't the easiest language to learn, but it certainly is very easy to learn if you have the right mindset.
+          This course will walk you through everything from defining variables to working with objects so make sure you pay attention and most importantly... TAKE NOTES.
+        </p>
+      </div>
+    </div>
+    <div id="course-info" class="row"> <!-- covering course information, modules and developer -->
+      <h1>Course Information:</h1>
+      <div class="col-sm-12">
+        <h3 id="topics">Topics Covered on this course:</h3>
+        <p><a href="#syntax">JavaScript Basic Syntax</a></p>
+        <p><a href="#console">The JavaScipt Console</a></p>
+        <p><a href="#comments">JavaScipt Comments</a></p>
+        <p><a href="#data-types">JavaScript Data Types</a></p>
+        <p><a href="#operators">JavaScript Operators</a></p>
+        <p><a href="#variables">JavaScript Variables</a></p>
+        <p><a href="#user-input">JavaScript User Input</a></p>
+        <p><a href="#ifElse">If/Else Statements</a></p>
+        <p><a href="#arrays">JavaScipt Arrays</a></p>
+        <p><a href="#loops">JavaScript Loops</a></p>
+        <p><a href="#iteration">JavaScript Array Iteration</a></p>
+        <p><a href="#functions">JavaScript Functions</a></p>
+        <p><a href="#scope">The JavaScript Scope</a></p>
+        <p><a href="#return">The JavaScript Return Statement</a></p>
+        <h3 id="dev-info">Course Developer: James Hunt</h3>
+      </div>
+    </div>
+    <div id="how-to-use" class="row"> <!-- section explaining how and where to run JavaScript code -->
+      <h1>Where can I run my JavaScript code?</h1>
+      <div class="col-sm-12">
+        <p class="image-wrapper">
+          <img id="link-code" src="images/htmlJsLink.jpg" alt="An example of how to link JavaScript to an HTML document.">
+        </p>
+        <p class="instructions">Type the above code into any programming text editor. I recommend Atom or Brackets.</p>
+        <p class="instructions">Then save that, and only that, into a file called <span>index.html</span>.</p>
+        <p class="instructions">Now, in the same folder where the index.html file is saved, create a new file called <span>script.js</span>.</p>
+        <p class="instructions">Done. Your HTML document and your external JavaScript file are now successfully linked together.</p>
+        <p class="instructions">Now in order to view your JavaScript console, simply open up your index.html file in Google Chrome, then <span>right click</span> and click <span>inspect</span>.</p>
+        <p class="instructions">When you click inspect you will have a whole bunch of menus brought up on your screen, move right across the small grey navigation bar and select <span>console</span>.</p>
+        <p class="instructions">Congratulations! You can now get feedback from your JavaScript code and run programs in the browser.</p>
+        <p class="instructions">Go ahead and type "<span>console.log("Hello World");</span>" into your JavaScipt file and watch what appears in the console.</p>
+        <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+      </div>
+    </div>
+    <div id="syntax" class="row"> <!-- Lesson about Js syntax -->
+      <h1>JavaScript Syntax:</h1>
+      <div class="col-sm-12">
+        <p class="image-wrapper">
+          <img id="syntax-example" src="images/script-example.jpg" alt="An example of JavaScript syntax shown by a script.">
+        </p>
+        <p class="lesson-information">In the image shown above, you will see a small section of JavaScript code.</p>
+        <p class="lesson-information">Don't worry too much if you do not understand the code in the example, I don't expect you to, it is just an example at this point.</p>
+        <p class="lesson-information">The aim of this is to show you what sort of thing you need to look out for.</p>
+        <p class="lesson-information">What can you notice from the above example?</p>
+        <p class="lesson-information">As you can see, each different statement ends with a semi-colon (";").</p>
+        <p class="lesson-information">Think of a semi-colon as a full stop for JavaScript.</p>
+        <p class="lesson-information">We use it when we want to tell the program that that step is over and to execute the next piece of code.</p>
+        <p class="lesson-information">If we do not put the semi-colons in the correct places, we will be given an error message and the code will not run at all.</p>
+        <p class="lesson-information">As you can also see, some lines are indented (meaning they start further right than other lines of code).</p>
+        <p class="lesson-information">As a JavaScript developer you will need to master indentation for many reasons, however the main reason being it makes your code cleaner and easier to undertand for you and other developers.</p>
+        <p class="lesson-information">Hopefully this has given you a small glimpse as to the sort of things you will need to look out for when writing JavaScript code.</p>
+        <p class="lesson-information">If not, there is no need to worry, syntax is something you will pick up naturally over time and you will certainly feel confident by the end of this course.</p>
+        <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+      </div>
+    </div>
+    <div id="console" class="row"> <!--- Lesson about the JavaScript console -->
+      <h1>The JavaScript Console:</h1>
+      <div class="col-sm-6">
+        <h3>JavaScript Code:</h3>
+        <p class="image-wrapper">
+          <img class="console-example" src="images/console-expressions.jpg" alt="An example of JavaScript console.log statements.">
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <h3>Google Chrome Console:</h3>
+        <p class="image-wrapper">
+          <img class="console-example" src="images/console-chrome-console.jpg" alt="An example of what the code to the left produces in the Chrome console.">
+        </p>
+      </div>
+      <p class="lesson-information">What you see on the left is the raw JavaScript code. Then, on the right, is what that code produces in the Google Chrome Console.</p>
+      <p class="lesson-information">The console in JavaScipt is primarily used for getting feedback from our program to help us write cleaner more effective code.</p>
+      <p class="lesson-information">The console is also extremely helpful when we need to troubleshoot or debug our code. We can use it to check variable values and perform other useful functions.</p>
+      <p class="lesson-information">Also, when making text based games in JavaScript, the console is used to help us communicate with the user and allow them to talk to the program.</p>
+      <p class="lesson-information">So in the example shown above on the left hand side, we have provided you with several useful examples of how the console can be used in JavaScript.</p>
+      <p class="lesson-information">On line 2 we have used console.log to print "Hello World" to the console.</p>
+      <p class="lesson-information">We can also log numbers to the console, as you can see on line 3 we have logged "1" and it appears as typed in the console.</p>
+      <p class="lesson-information">JavaScript also has a few different data types (we will cover all of the in future lessons), we can log boolean values (true or false) to the console.</p>
+      <p class="lesson-information">From line 6 to 9 I have given a few examples of using the console to perform mathematical functions.</p>
+      <p class="lesson-information">I have provided examples of addition, subtraction and multiplication. JavaScript is capable of a lot more but we will leave those until the later lessons.</p>
+      <p class="lesson-information">Building on what you have just learned, we can also log variables to the console.</p>
+      <p class="lesson-information">On line 12 and 14 we have defined 2 variables (you will learn more about variables later on) and we have assigned them with 2 different string values.</p>
+      <p class="lesson-information">We can then tell JavaScript to log our variable values to the console.</p>
+      <p class="lesson-information">We can also combine variables with whatever we want the console to say. For example, on line 15, I am combining a string with a variable. Check the console to see the output.</p>
+      <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+    </div>
+    <div id="comments" class="row"> <!-- section explaining comments in JavaScript -->
+      <h1>JavaScript Comments:</h1>
+      <div class="col-sm-12">
+        <p class="image-wrapper">
+          <img id="comment-example" src="images/comment-example.jpg" alt="An example of comments in JavaScript.">
+        </p>
+        <p class="lesson-information">In the image shown above you will see a few different examples of comments in JavaScript.</p>
+        <p class="lesson-information">Comments in JavaScript are no different to comments in other programming languages.</p>
+        <p class="lesson-information">Comments are used for exaplaining certain parts of code and for helping us understand what we are doing.</p>
+        <p class="lesson-information">For example (when we move onto functions, comments are far more useful), we will use comments to remind us what a specific function will do.</p>
+        <p class="lesson-information">Whatever you write in your comment will not appear anywhere in the console or even affect of your code, JavaScript will read right over it and ignore it.</p>
+        <p class="lesson-information">A single line comment is started with a double forward slash, like this <span>//</span>.</p>
+        <p class="lesson-information">A comment that you wish to span multiple lines with will open with a <span>/*</span> and close with a <span>*/</span>.</p>
+        <p class="lesson-information">Comments are also useful for future developers or coding enthusiasts that may want to read your code and learn something from it.</p>
+        <p class="lesson-information">As a programmer, it is good practice to leave comments in your code. I certainly recommend doing so.</p>
+        <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+      </div>
+    </div>
+    <div id="data-types" class="row"> <!-- section explaining the different data types in JavaScript -->
+      <h1>JavaScript Data Types:</h1>
+      <div class="col-sm-12">
+        <p class="image-wrapper">
+          <img id="data-type-example" src="images/data-examples.jpg" alt="An image showing the different types of data JavaScript uses.">
+        </p>
+        <p class="lesson-information">JavaScript has 6 official data types that we as developers can use.</p>
+        <p class="lesson-information">In the image above I have shown you all of the different data types in JavaScript and what they look like.</p>
+        <p class="lesson-information">Here is a breakdown of what they are called and what kind of data they store:</p>
+        <p class="lesson-information"><span>STRING: </span>A string is anything that is enclosed within a set of speech marks. This can include numbers.</p>
+        <p class="lesson-information"><span>NUMBER: </span>A number value is just as you may have guessed, any numberic value assigned to a variable.</p>
+        <p class="lesson-information"><span>BOOLEAN: </span>A boolean value, or a "bool", is a value that is either <span>true</span> or <span>false</span>.</p>
+        <p class="lesson-information"><span>OBJECT: </span>We will learn about objects in future lessons, but it is useful to know they reserve their own data type.</p>
+        <p class="lesson-information"><span>UNDEFINED: </span>Undefined becomes present when a variable has been declared, but has not been assigned any data to hold.</p>
+        <p class="lesson-information"><span>NULL: </span>In JavaScript (other languages very), null is linked to no identification at all, it often points to where data should be, however is not.</p>
+        <p class="lesson-information">The good thing about JavaScript is that it can tell what data it is storing and will assign it a data type for you, you will never have to define the data type for any variable in JavaScript.</p>
+        <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+      </div>
+    </div>
+    <div id="operators"> <!-- section covering operators in JavaScript such as bigger and smaller than -->
+      <h1>JavaScript Operators:</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="operators-code" src="images/operators-code.jpg" alt="An image showing how to use different operators in JavaScript.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Console:</h3>
+          <p class="image-wrapper">
+            <img id="operators-console" src="images/operators-console.jpg" alt="An image showing the code on the left running in the chrome console.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">JavaScript has several operators that, as a developer, you will need to learn.</p>
+          <p class="lesson-information">On line 2, within our if statement (don't worry, you will learn about these soon) we have used the <span>bigger than</span> operator.</p>
+          <p class="lesson-information">Then, on line 8, we have done the same thing but this time with the <span>smaller than</span> operator.</p>
+          <p class="lesson-information">From line 14 to 17 you will see examples of more mathematical operators, here we have covered; addition, subtraction, multiplication and finally division.</p>
+          <p class="lesson-information">Finally, as you can see on line 19 we come to a <span>%</span> sign. This is a little bit tougher than the others but is just as important.</p>
+          <p class="lesson-information">This is used when we want to find out remainders, stay with me on this one. In our example we are trying to find out how many times 4 can go into 10.</p>
+          <p class="lesson-information">The answer to that is twice, with 2 to spare. That is what this operator does, fits one number into another and then returns the difference.</p>
+          <p class="lesson-information">To give you another example, <span>10 % 5</span> would return <span>0</span>. This is because 5 can fit into 10 exactly without leaving any remainder.</p>
+          <p class="lesson-information">To finish off this section, we have given you two more JavaScript operators. On line 22, in the form of <span>&&</span>, you will see the <span>AND</span> operator.</p>
+          <p class="lesson-information">The way this operator works, is you can compare multiple statements and if all of them are true the result is true, however, if even 1 of the statements is false, the entire equation will become false.</p>
+          <p class="lesson-information">Moving on, on line 28, you will see, in the form of <span>||</span>, the <span>OR</span> operator.</p>
+          <p class="lesson-information">The way the or operator works is similar to the and operator. However, where it differs, is that if even one single statement it is checking is true, the entire equation will become true.</p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="variables"> <!-- section explaining JavaScript variables -->
+      <div class="row">
+        <h1>JavaScript Variables:</h1>
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="variables-example" src="images/variable-example.jpg" alt="An image showing different JavaScript variables.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Console:</h3>
+          <p class="image-wrapper">
+            <img id="variables-console-example" src="images/variable-console-example.jpg" alt="An image showing different JavaScript variables' result in the console.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">On the left you will see real examples of variables in JavaScript and above this text on the right you will see the result of that code being run.</p>
+          <p class="lesson-information">Variables in JavaScript can hold data in 6 ways (all 6 ways explained in data types lesson).</p>
+          <p class="lesson-information">Variables are defined by typing <span>var</span> then followed by the name of the variable. Examples can be seen on the left.</p>
+          <p class="lesson-information">Unlike other languages you do not need to specify what type of data a variable is going to contain. JavaScript will evaluate and assign a data type for you.</p>
+          <p class="lesson-information">Variables are used to store data that we can then access later, what you will be learning in the next lesson is how to store user inputs inside variables.</p>
+          <p class="lesson-information">Later on, you will learn about the <span>scope</span>. In JavaScript you can create <span>local variables</span> and <span>global variables</span>. Don't worry for now, we will cover this slightly later on.</p>
+          <p class="lesson-information">Make sure you carefully read our JavaScript code on the left. Why not have a go yourself. Try to make the console say: <span>"Hello, my name is 'your name here'."</span> by storing your name into a variable.</p>
+          <p class="lesson-information">Variables and storing data is a fundemental part of programming and we recommend you practice this for a while. Use our code to help you out if you need.</p>
+          <p class="lesson-information">If you are looking for some more practice, head over to our challenge section to gain some more knowlegde and experience with variables.</p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="user-input"> <!-- section teaching how to take a user's input and store it -->
+      <h1>JavaScript User Input:</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="user-input-example" src="images/user-input-code.jpg" alt="An image showing how to take a user's input in JavaScript.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Result:</h3>
+          <p class="image-wrapper">
+            <img id="alert-example" src="images/alert-example.jpg" alt="An image showing the result of running the code shown on the left.">
+          </p>
+          <p class="image-wrapper">
+            <img id="prompt-example" src="images/prompt-example.jpg" alt="An image showing the result of running the code shown on the left.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">On the left you will see a sample of code that creates the images shown on the right when the index.html file is opened.</p>
+          <p class="lesson-information">On line one you will see what is called a <span>JavaScript alert</span>. These are used when we want to give the user some information.</p>
+          <p class="lesson-information">You can make an alert say whatever you want by typing your desired message in between the speech marks. <span>Give it a try!</span></p>
+          <p class="lesson-information">On line 3 you will see an example of what we call a <span>JavaScript prompt</span>. We use these when we want to take information from the user.</p>
+          <p class="lesson-information">The part before the comma is what will appear above the text box, and after the comma, you can type what you want to see inside the text box.</p>
+          <p class="lesson-information"><span>Please take note:</span>The part aftet the comma is optional. You may remove that part of code and the text box will appear blank for the user to fill in.</p>
+          <p class="lesson-information">What you may notice is that I have stored the prompt inside a variable called "userInput". What this means is that whatever the user types into that box is saved into that variable.</p>
+          <p class="lesson-information">When we run the console.log statement on the userInput variable it will log whatever the user has typed into the prompt box to the console. <span>Why not give it a go with your name?</span></p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="ifElse">
+      <h1>JavaScript If/Else Statements:</h1> <!-- section exaplining if and else statement in JavaScript -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="ifElse-code" src="images/ifandelsecode.jpg" alt="An image showing how to write an if/else statement in JavaScript.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">The if and else statement is something that every single programmer needs to learn. Above you will see a very useful example of how it works.</p>
+          <p class="lesson-information">It works similar to basic English, if this happens, do this. If that happens, then do that instead.</p>
+          <p class="lesson-information">Inbetween the brackets that come after you write <span>if</span> or <span>else if</span> you will need to write your condition. That condition can be anything you want.</p>
+          <p class="lesson-information">You can write an unlimited amount of <span>else if</span> statements, however you can only have one <span>if</span> statement and one <span>else</span> statement.</p>
+          <p class="lesson-information">When writing your result, (the part that goes in the squigly brackets), you can put anything you want, but for an example, use <span>console.log</span> so you can see what your code is doing.</p>
+          <p class="lesson-information">To run you through what happens when we run an <span>if/else if/else</span> statement in JavaScript, this is how it is broken down:</p>
+          <p class="lesson-information">The variable is checked against each condition within the <span>if/else if</span> statements.</p>
+          <p class="lesson-information">The first condition that equates to true will end the analysis and the code for that condition will be run.</p>
+          <p class="lesson-information">If no condition is met at all, the code that is in the <span>else</span> brackets will be run.</p>
+          <p class="lesson-information">Multiple conditions may be met, however, the first one to match is the one that will produce its result.</p>
+          <p class="lesson-information"><span>Task:</span> Write a program that takes the user's input and stores it in a variable called "number" and then checks that number in an if/else statement...</p>
+          <p class="lesson-information">If the number is smaller than 50, make the console say "This number is small". If the number is bigger than 100, make the console say "This number is large." Finally, if the number is bigger than 200, make the console say "This number is huge!".</p>
+          <p class="lesson-information"><span>Good luck!</span> Please refer back to our example if you get stuck!</p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="arrays"> <!-- section that explains how to use arrays in JavaScript -->
+      <h1>JavaScript Arrays:</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="array-code" src="images/array-code.jpg" alt="An image showing how to create an array in JavaScript.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Console:</h3>
+          <p class="image-wrapper">
+            <img id="array-console" src="images/array-console.jpg" alt="An image showing the code in the left image running in the chrome console.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">In JavaScript and many other programming languages, arrays are extremely common and useful.</p>
+          <p class="lesson-information">An array is a method of storing data, we can then later access that information to help us create a functional program.</p>
+          <p class="lesson-information">An array is declared like a variable, all the information goes between a pair of <span>[]'s</span> and each individual piece of data is seperated by a comma.</p>
+          <p class="lesson-information">If we log an array to the console by simply passing the console.log function the array name, we will get a summary of all of the data within that array.</p>
+          <p class="lesson-information">An example of this can be seen in the exmaple above, we have logged three arrays to the console and as you can see, the console has given us a breakdown of the data from the arrays.</p>
+          <p class="lesson-information">What if we want to retrieve a specific value from an array? Well, arrays start at 0. This means that the first item in an array is at position 0.</p>
+          <p class="lesson-information">If you look at line 19 in the above example, we have logged <span>strings[0]</span> to the console and it has printed "Welcome". That is because "Welcome" is at position 0 in our strings array.</p>
+          <p class="lesson-information">Other languages may differ, however in JavaScript we can store multiple data types in the same array. An example of this can be seen on line 11 in the array called "mix".</p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="loops">
+      <h1>JavaScript Loops:</h1>
+      <div class="row">
+        <h3>While Loops:</h3> <!-- section covering while loops -->
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="while-loops-code" src="images/while-loops-code.jpg" alt="An image showing how to write while loops in JavaScript.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Console:</h3>
+          <p class="image-wrapper">
+            <img id="while-loops-console" src="images/while-loops-console.jpg" alt="An image showing the code in the left image running in the chrome console.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">In the images above you can see (on the left) how to write a while loop, and then (on the right), what that code produces.</p>
+          <p class="lesson-information">While loops are used when we don't really know how many times we want the loop to run, we are sort of telling the program to run this loop over and over until told otherwise.</p>
+          <p class="lesson-information">The way that a while loop is structured is we pass the loop a condition, we then tell the loop what we want it to do if that condition is met.</p>
+          <p class="lesson-information"><span>PAY ATTENTION: </span>On line 8 through 10 you will see an example of an <span>endless loop</span>. That is when the loop is running and has no way of ending itself.</p>
+          <p class="lesson-information">If an endless loop is created, the program will run that loop over and over again without stopping and the program will crash. Make sure you keep this in mind when writing while loops.</p>
+          <p class="lesson-information">When running our code, we have skipped the endless loop because it would crash the website, it would log "I AM ENDLESS" to the console until the site crashed.</p>
+          <p class="lesson-information">As you can see on line 13 to 17, I have written a small piece of code that will count from 1 to 5 and then stop.</p>
+          <p class="lesson-information">This loop is not endless because it knows when to stop looping. It will stop looping as soon as <span>variable i</span> is no longer smaller than 5.</p>
+          <p class="lesson-information">You might be wondering, what does <span>i++</span> mean? By writing this we are telling the program to count upwards by 1 every time the loop is run.</p>
+          <p class="lesson-information">While loops are one of the easier styles of looping because they are easy to understand, if you think of it like; <span>while this is happening, do this. If this isn't happening anymore, break the loop.</span></p>
+        </div>
+      </div>
+      <div class="row">
+        <h3>For Loops:</h3>
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="for-loops-code" src="images/for-loop-code.jpg" alt="An image showing how to write for loops in JavaScript.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Console:</h3>
+          <p class="image-wrapper">
+            <img id="for-loops-console" src="images/for-loop-console.jpg" alt="An image showing the code in the left image running in the chrome console.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">For loops are very similar to while loops and, speaking from a syntax standpoint, are almost the same.</p>
+          <p class="lesson-information">In the example above you will see a couple examples of us writing functional for loops in JavaScript.</p>
+          <p class="lesson-information">The way that for loops are used does differ to while loops however, if you remember we said that while loops are used when we don't know how long we want to loop for.</p>
+          <p class="lesson-information">Well, for loops are used when we know roughly how many times we want a certain piece of code to run.</p>
+          <p class="lesson-information">In the next lesson, we will cover <span>array iteration</span> and for that, because we know how long our array is, we will almost always use a for loop.</p>
+          <p class="lesson-information">The way they are structured, is that we define a variable to count for us, we then insert a semi-colon, then we say where we want it to count up or down to.</p>
+          <p class="lesson-information">After this has been done, we then insert another semi-colon and then tell the loop if we want the variable to count up, or down.</p>
+          <p class="lesson-information">In the exmaple above we have provided an example of us counting up and down with a for loop, notice how the code looks, and check what outcome this produces in the console.</p>
+          <p class="lesson-information">In the next lesson where we cover array iteration, you will learn a lot more about for loops and how they can be applied to real life applications.</p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="iteration"> <!-- section coverting array iteration in Js -->
+      <div class="row">
+        <h1>JavaScript Array Iteration:</h1>
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="iteration-code" src="images/iteration-code.jpg" alt="An image showing array iteration in JavaScript.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Console:</h3>
+          <p class="image-wrapper">
+            <img id="iteration-console" src="images/iteration-console.jpg" alt="An image showing the code in the left image running in the chrome console.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information"><span>Array iteration</span> is a term used when developers are looping over an array to extract all of it's data.</p>
+          <p class="lesson-information">In the example above you can see we have defined 2 arrays and then have used 2 seperate for loops to loop over the arrays.</p>
+          <p class="lesson-information">If you haven't noticed already, the for loop is structured exactly the same, except for where we tell it where we want to count to.</p>
+          <p class="lesson-information">In the last lesson, we gave it a number, but when we loop the array, we need it to count to the length of the array, this is what the <span>array.length</span> function does.</p>
+          <p class="lesson-information">Don't worry, we will learn more about JavaScript functions in the next lesson.</p>
+          <p class="lesson-information">So the way this is structured is essentially, we have a counter variable (<span>i</span> and <span>j</span>), that will increase by 1 every time the loop runs, the loop will run the amount of times equal to the length of the array specified.</p>
+          <p class="lesson-information">When we get to the console.log statement, we are telling the console to log the array item equal to the <span>i</span> variable and then move onto the next piece of data within the array.</p>
+          <p class="lesson-information">When all the data has been extracted from the array, the loop will end. No need to worry, running a loop over your array does not affect the array in any way, it remains unedited and the data within remains safe.</p>
+          <p class="lesson-information">Array iteration is very common in programming, why not try to make one that logs to the console, "Hello I am learning to code!". Best of luck, refer back to our example if you need the extra bit of help.</p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="functions"> <!-- section covering functions in Js -->
+      <div class="row">
+        <h1>JavaScript Functions:</h1>
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="functions-code" src="images/functionscode.jpg" alt="An image showing how to write functions in JavaScript.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Console:</h3>
+          <p class="image-wrapper">
+            <img id="functions-console" src="images/functionsconsole.jpg" alt="An image showing the code in the left image running in the chrome console.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">A function is a piece of code that can be executed multiple times to achieve a desired result.</p>
+          <p class="lesson-information">Functions in JavaScript are defined by typing <span>var functionName (any arguments go here) { code goes here };</span></p>
+          <p class="lesson-information">An example of a common JavaScript function is <span>.length</span>, you can use this to return the length of a variable/array etc, from line 2 to 6 you will see examples of this.</p>
+          <p class="lesson-information">Other popular pre-included JavaScript functions also include the <span>toUpperCase</span> function and the <span>toLowerCase</span> function which do as you would expect, convert a string from lower to upper or from upper to lower.</p>
+          <p class="lesson-information">Examples of these functions running can be seen from line 8 to 11 in the image above on the left hand side. Make sure you read the console (image on the upper right) to see what result calling these functions has on our variables.</p>
+          <p class="lesson-information">When programming you can also make your own custom functions! Exciting! Writing your own functions is easy and makes programming an easier job for you.</p>
+          <p class="lesson-information">Examples of custom functions can be seen from line 12 to line 30. Don't worry when you see the word <span>return</span>, we will be covering the role of this special word at the end of the course.</p>
+          <p class="lesson-information">So, on line 12 you will see a custom function I have made that will itterate over an array, why have I made this? Because we can run that function on any array we want, and we wont need to constantly write for loops over and over again.</p>
+          <p class="lesson-information"><span>ALWAYS REMEMBER:</span> You want to keep your code as clean and as efficient as possible, this means that you want to write as few lines as possible to achieve your result.</p>
+          <p class="lesson-information">A <span>parameter</span> or an <span>argument</span> is something that we pass to functions to make them run, they go inside the regular brackets after the function name.</p>
+          <p class="lesson-information">To help you understand this, look at line 12, we have given the itterate function a parameter of <span>arr</span>. Now look at line 13, we have said <span>arr.length...</span></p>
+          <p class="lesson-information">So now, if you check out line 17, where we have defined our variable called <span>itterated</span>, we have called the itterate function, and we have put "array" inside the brackets.</p>
+          <p class="lesson-information">On line 5, we defined an array, called array, so what this function will now do, is on line 13, replace <span>arr</span> with <span>array</span> and now the function will be looping over the array called "array".</p>
+          <p class="lesson-information">The same concept can be seen on line 18 through 30, that one may be easier to understand!</p>
+          <p class="lesson-information"><span>CHALLENGE:</span> Make your own function that subtracts one number from another, use our code from line 18 to 30 as a template!</p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="scope"> <!-- section covering the Js scope -->
+      <div class="row">
+        <h1>The JavaScript Scope:</h1>
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="scope-code" src="images/scopecode.jpg" alt="An image showing how the scope works in JavaScript.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Console:</h3>
+          <p class="image-wrapper">
+            <img id="scope-console" src="images/scopeconsole.jpg" alt="An image showing the code in the left image running in the chrome console.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">Every programming language has what is called a <span>scope</span>.</p>
+          <p class="lesson-information">The scope refers to the area of code where something is defined or called upon. In JavaScript, we have the <span>gloabl scope</span> and the <span>local scope</span>.</p>
+          <p class="lesson-information">When we define something in the global scope, it can be accessed by functions within the same scope, so for example, I have defined a variable called myVar in the global scope and set it equal to a value of 10.</p>
+          <p class="lesson-information">What this means is that, when called in the global scope, myVar = 10. However, now check out line 4 through 7, I have defined another variable... with the same name and set it equal to 5.</p>
+          <p class="lesson-information">This variable has been defined inside a function, which makes it a <span>local varibale</span> of that function, when I ask what that value is equal to whilst inside that function, the result will be 5.</p>
+          <p class="lesson-information">Then, on line 9, I have gone back into the global scope and asked what myVar is equal to, it returns the value 10 to me.</p>
+          <p class="lesson-information">If you are looking to define a value that can be accessed anywhere in the JavaScript file, let's say that you want a variable to store the same value everywhere and in all scopes;</p>
+          <p class="lesson-information">To achieve this result you would use the following code; <span>varName = value;</span> so it is exactly the same, but you just don't say <span>var</span> before you define the variable.</p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="return"> <!-- section covering the return statement -->
+      <h1>The JavaScript Return Statement:</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>JavaScript Code:</h3>
+          <p class="image-wrapper">
+            <img id="return-code" src="images/returncode.jpg" alt="An image showing how the return statement works in JavaScript.">
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Google Chrome Console:</h3>
+          <p class="image-wrapper">
+            <img id="return-console" src="images/returnconsole.jpg" alt="An image showing the code in the left image running in the chrome console.">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lesson-information">The return statement is one of the harder concepts to understand in any programming language, but when you get it, you get it.</p>
+          <p class="lesson-information">Think of the return statement of a way of ending a function from running and simply making that function equate to a certain value.</p>
+          <p class="lesson-information">That value can be of any data type, to see an example, check the screenshot on the top left to see how many different data types I have returned.</p>
+          <p class="lesson-information">What you may have noticed is that I have called all of the functions on the left and stored them in a variable, what the return statement does is make that variable name equal to whatever value I have returned.</p>
+          <p class="lesson-information">You can see this on line 2 through 4. I have returned a true value, simple right?</p>
+          <p class="lesson-information">I have then called my return true function and stored it inside a value called "tru", that variable is now equal to true, because inside that function I have returned the true value.</p>
+          <p class="lesson-information">It may take some time playing around with this concept yourself, but I feel like my examples will be enough to start you off in the right direction!</p>
+          <p class="lesson-information"><span>CHALLENGE:</span> Why not try to make your own function that returns your name? Store your function in a variable called "name" and then log that variable to the console.</p>
+          <p class="lesson-information">If you get stuck, check out lines 19 to 23 where you can see us returning, storing and then logging a string value to the console.</p>
+          <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+        </div>
+      </div>
+    </div>
+    <div id="thanks"> <!-- section thanking users for using this course and to recommend challenges and projects -->
+      <h1>Congratulations!</h1>
+      <h3>Well done studying hard while learning with us here at dotCODE!</h3>
+      <div id="next-steps" class="row">
+        <div class="col-sm-4"> <!-- carry on with another course -->
+          <h3>More Courses</h3>
+          <p class="image-wrapper">
+            <a href="/Users/James/Desktop/dotCODE/Courses/index.html">
+              <img class="next-step-icons" src="images/courses.jpg" alt="Check out our other coding courses by clicking here!.">
+            </a>
+          </p>
+          <p class="breakdown">
+            Why not take the next step in your coding experience and learn another useful programming language right here.
+          </p>
+        </div>
+        <div class="col-sm-4"> <!-- Check out the JavaScript projects -->
+          <h3>JavaScript Projects</h3>
+          <p class="image-wrapper">
+            <a href="">
+              <img class="next-step-icons" src="images/projects.jpg" alt="Check out our JavaScript projects by clicking here!.">
+            </a>
+          </p>
+          <p class="breakdown">
+            Click here to learn some more JavaScript and check out some of our awesome JavaScript projects that include BlackJack21.
+          </p>
+        </div>
+        <div class="col-sm-4"> <!-- Check out the JavaScript challenges -->
+          <h3>JavaScript Challenges</h3>
+          <p class="image-wrapper">
+            <a href="">
+              <img class="next-step-icons" src="images/challenges.jpg" alt="Check out our JavaScript challenges by clicking here!.">
+            </a>
+          </p>
+          <p class="breakdown">
+            Feeling a challenge? Click here to view all of our available JavaScript challenges and really test your JavaScript knowledge.
+          </p>
+        </div>
+      </div>
+      <div id="return-to-top">
+        <p class="return-to-menu"><a href="#nav-bar">Click here to return to the top of the page.</a></p> <!-- send the user back to the top of the page -->
+      </div>
+    </div>
+    <div id="footer" class="row"> <!-- footer -->
+      <div class="col-sm-3">
+        <h3>Our Courses</h3>
+        <p><a href="">HTML</a></p>
+        <p><a href="">CSS</a></p>
+        <p><a href="/Users/James/Desktop/dotCODE/JavaScriptCourse/index.html">JavaScript</a></p>
+        <p><a href="">jQuery</a></p>
+        <p><a href="">C++</a></p>
+        <p><a href="">.NET</a></p>
+        <p><a href="">MySQL</a></p>
+        <p><a href="">Node.js</a></p>
+      </div>
+      <div class="col-sm-3">
+        <h3>Test Yourself</h3>
+        <p><a href="">HTML</a></p>
+        <p><a href="">CSS</a></p>
+        <p><a href="">JavaScript</a></p>
+        <p><a href="">jQuery</a></p>
+        <p><a href="">C++</a></p>
+        <p><a href="">.NET</a></p>
+        <p><a href="">MySQL</a></p>
+        <p><a href="">Node.js</a></p>
+      </div>
+      <div class="col-sm-3">
+        <h3>Read More</h3>
+        <p><a href="/Users/James/Desktop/dotCODE/AboutUs/index.html">Our Team</a></p>
+        <p><a href="/Users/James/Desktop/dotCODE/AboutUs/index.html">Our Aspirations</a></p>
+        <p><a href="/Users/James/Desktop/dotCODE/AboutThisPage/index.html">About This Page</a></p>
+      </div>
+      <div class="col-sm-3">
+        <h3>Contact Us</h3>
+        <p>dotCodeSupport@Yahoo.com</p>
+        <p><a href="">Facebook.com/dotCodeSupport</a></p>
+      </div>
+    </div>
+    <div id="copyright">
+      <p>Copyright (c) 2017 Copyright Holder All Rights Reserved.</p>
+    </div>
+  </body>
+</html>

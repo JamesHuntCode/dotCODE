@@ -1,0 +1,707 @@
+/* .CODE javascript page CSS desiged and created by James Hunt and Brandon Rodgers - 29/07/17 */
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* nav-bar styling */
+
+#nav-bar {
+  text-align: center;
+  background-color: #333;
+}
+
+#nav-bar h3 {
+  margin: 10px;
+  padding: 10px;
+  font-family: "Quicksand", arial;
+  cursor: pointer;
+}
+
+#nav-bar a {
+  color: darkorange;
+  text-decoration: none;
+}
+
+/* introduction styling */
+
+#introduction h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#introduction h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+}
+
+.intro-info {
+  font-family: "Quicksand", arial;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* course info styling */
+
+#course-info {
+  background-color: #E0E0E0;
+}
+
+#course-info h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#topics {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-weight: bold;
+  margin: 5px 5px 15px 5px;
+  padding: 5px;
+}
+
+#course-info p {
+  font-family: "Quicksand", arial;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+#course-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+#dev-info {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-weight: bold;
+  margin: 15px 5px 15px 5px;
+  padding: 5px;
+}
+
+.return-to-menu {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.return-to-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* how to use section styling */
+
+#how-to-use h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#link-code {
+  height: 140px;
+  width: 500px;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.instructions {
+  font-family: "Quicksand", arial;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.instructions span {
+  font-weight: bold;
+}
+
+/* syntax lesson styling */
+
+#syntax {
+  background-color: #E0E0E0;
+}
+
+#syntax h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+#syntax-example {
+  box-shadow: 0px 0px 5px grey;
+  height: 420px;
+  width: 620px;
+  margin: 5px;
+}
+
+.lesson-information {
+  font-family: "Quicksand", arial;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* console section styling */
+
+#console h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#console h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+.console-example {
+  height: 400px;
+  width: 530px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px grey;
+}
+
+/* JavaScript comment section styling */
+
+#comments {
+  background-color: #E0E0E0;
+}
+
+#comments h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#comment-example {
+  height: 250px;
+  width: 620px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#comments span {
+  font-weight: bold;
+}
+
+/* Data style syling section */
+
+#data-types h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#data-type-example {
+  height: 180px;
+  width: 620px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+.data-info {
+  font-family: "Quicksand", arial;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+#data-types span {
+  font-weight: bold;
+}
+
+/* Operators section styling */
+
+#operators {
+  background-color: #E0E0E0;
+}
+
+#operators h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#operators h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#operators-code {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#operators-console {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#operators span {
+  font-weight: bold;
+}
+
+/* variables section styling */
+
+#variables h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#variables h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#variables-example {
+  height: 480px;
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#variables-console-example {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#variables span {
+  font-weight: bold;
+}
+
+/* User input section styling */
+
+#user-input {
+  background-color: #E0E0E0;
+}
+
+#user-input h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#user-input h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#user-input-example {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#user-input-console-example {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#user-input span {
+  font-weight: bold;
+}
+
+#alert-example {
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#prompt-example {
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+/* if else statements section */
+
+#ifElse h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#ifElse h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#ifElse-code {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#ifElse-console {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#ifElse span {
+  font-weight: bold;
+}
+
+/* array section styling */
+
+#arrays {
+  background-color: #E0E0E0;
+}
+
+#arrays h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#arrays h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#array-code {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#array-console {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#arrays span {
+  font-weight: bold;
+}
+
+/* loops section styling */
+
+#loops h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#loops h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#while-loops-code {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#while-loops-console {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#for-loops-code {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#for-loops-console {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+
+#loops span {
+  font-weight: bold;
+}
+
+/* array iteration styliong */
+
+#iteration {
+  background-color: #E0E0E0;
+}
+
+#iteration h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#iteration h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#iteration-code {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#iteration-console {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#iteration span {
+  font-weight: bold;
+}
+
+/* JavaScript functions styling */
+
+#functions h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#functions h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#functions-code {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#functions-console {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#functions span {
+  font-weight: bold;
+}
+
+/* scope section styling */
+
+#scope {
+  background-color: #E0E0E0;
+}
+
+#scope h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#scope h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#scope-code {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#scope-console {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#scope span {
+  font-weight: bold;
+}
+
+/* JavaScript return statement */
+
+#return h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#return h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#return-code {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#return-console {
+  width: 530px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 5px;
+}
+
+#return span {
+  font-weight: bold;
+}
+
+/* thanks section styling */
+
+#thanks {
+  background-color: #E0E0E0;
+}
+
+#thanks h1 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  font-size: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#thanks h3 {
+  text-align: center;
+  font-family: "Quicksand", arial;
+  margin: 5px;
+  padding: 5px;
+}
+
+#next-steps h3 {
+  font-weight: bold;
+}
+
+#return-to-top {
+  background-color: #ffffff;
+}
+
+.next-step-icons {
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px grey;
+  margin: 10px;
+}
+
+.breakdown {
+  font-family: "Quicksand", arial;
+  font-size: 15px;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* footer styling */
+
+#footer {
+  background-color: #333;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#footer h3 {
+  margin: 0px;
+  padding: 10px;
+  font-family: "Quicksand", arial;
+  color: darkorange;
+}
+
+#footer p {
+  font-family: "Quicksand", arial;
+  color: white;
+}
+
+#footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* copyright notice */
+
+#copyright {
+  text-align: center;
+  background-color: #333;
+  margin: 0px;
+  padding: 0px;
+}
+
+#copyright p {
+  font-family: "Quicksand", arial;
+  color: darkorange;
+  padding: 10px;
+  margin-bottom: 0px;
+}
